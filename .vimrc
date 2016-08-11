@@ -67,7 +67,7 @@ Bundle 'luoziyihao/my_fisa'
 "altercation/vim-colors-solarized
 Bundle 'altercation/vim-colors-solarized'
 "Valloric/YouCompleteMe
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 "Tagbar
 Bundle 'majutsushi/tagbar'
 "ariline
@@ -81,11 +81,11 @@ Bundle 'tpope/vim-fugitive'
 "vim-gitgutter, realtime view the change in diff
 Bundle 'airblade/vim-gitgutter'
 "Shougo/unite.vim
-Bundle 'Shougo/unite.vim'
+"Bundle 'Shougo/unite.vim'
 " Python and other languages code checker
 Bundle 'scrooloose/syntastic'
 " markdown colorscheme
-Bundle 'tpope/vim-markdown'
+Bundle 'plasticboy/vim-markdown'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -116,28 +116,28 @@ if !filereadable(color_readme)
 endif
 
 " use 256 colors when possible
-if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
-	let &t_Co = 256
-    " colorscheme fisa
-    colorscheme solarized
-    "colorscheme molokai
-else
-    colorscheme delek
-endif
+" if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
+"     let &t_Co = 256
+"     " colorscheme fisa
+"     colorscheme solarized
+"     "colorscheme molokai
+" else
+"     colorscheme delek
+" endif
 
-" colors for gvim
-if has('gui_running')
-    colorscheme wombat256
-endif
+" " colors for gvim
+" if has('gui_running')
+"     colorscheme wombat256
+" endif
 " ============================pre plugin cfg================================================
 
-"*********************************************插件配置*****************************************
-"solarized------------------------------
-let g:solarized_termtrans = 1
-colorscheme solarized
-" togglebg#map("<F5>")
-set background=dark
-"solarized------------------------------
+" "*********************************************插件配置*****************************************
+" "solarized------------------------------
+" let g:solarized_termtrans = 1
+" colorscheme solarized
+" " togglebg#map("<F5>")
+" set background=light
+" "solarized------------------------------
 "
 "syntastic------------------------------
 " need install rely 
@@ -335,23 +335,23 @@ set is
 set ignorecase smartcase
 "设置搜索时智能忽略大小写
 
-" nicer colors
-highlight DiffAdd           cterm=bold ctermbg=none ctermfg=119
-highlight DiffDelete        cterm=bold ctermbg=none ctermfg=167
-highlight DiffChange        cterm=bold ctermbg=none ctermfg=227
-highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
-highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
-highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
+" " nicer colors
+" highlight DiffAdd           cterm=bold ctermbg=none ctermfg=119
+" highlight DiffDelete        cterm=bold ctermbg=none ctermfg=167
+" highlight DiffChange        cterm=bold ctermbg=none ctermfg=227
+" highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
+" highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
+" highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
 
-set cursorline
+"set cursorline
 "突出显示当前行
 
-set cursorcolumn
+"set cursorcolumn
 "突出显示当前列
 
 "浅色高亮
-"autocmd InsertLeave * se nocul  " 用浅色高亮当前行  
-"autocmd InsertEnter * se cul    " 用浅色高亮当前行  
+autocmd InsertLeave * se nocul  " 用浅色高亮当前行  
+autocmd InsertEnter * se cul    " 用浅色高亮当前行  
 
 "*********************************************文本编辑设置*****************************************
 set backspace=start,eol,indent
@@ -421,8 +421,8 @@ set autoread
 set directory=~/.vim/dirs/tmp     " directory to place swap files in
 set backup                        " make backup files
 set backupdir=~/.vim/dirs/backups " where to put backup files
-set undofile                      " persistent undos - undo after you re-open the file
-set undodir=~/.vim/dirs/undos
+"set undofile                      " persistent undos - undo after you re-open the file
+"set undodir=~/.vim/dirs/undos
 set viminfo+=n~/.vim/dirs/viminfo
 
 " create needed directories if they don't exist
@@ -432,9 +432,9 @@ endif
 if !isdirectory(&directory)
     call mkdir(&directory, "p")
 endif
-if !isdirectory(&undodir)
-    call mkdir(&undodir, "p")
-endif
+"if !isdirectory(&undodir)
+"    call mkdir(&undodir, "p")
+"endif
 "*********************************************key map***************************************
 
 function Xml()
