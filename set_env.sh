@@ -6,6 +6,8 @@
 # Created Time: 2016-05-19
 #########################################################################
 
+# for public server
+
 sudo apt-get install zsh
 sudo apt-get install tmux
 
