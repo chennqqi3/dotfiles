@@ -1,10 +1,10 @@
+#!/bin/bash
 #########################################################################
 # File Name: set_env.sh
 # Author: raoxiang
 # mail: xiangrao@qilin99.com
 # Created Time: 2016-05-19
 #########################################################################
-#!/bin/bash
 
 MY_HOME=${HOME}
 DOTFILES=${MY_HOME}"/dotfiles"

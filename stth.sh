@@ -1,10 +1,10 @@
+#!/bin/bash
 #########################################################################
 # File Name: stth.sh 
 # Author: raoxiang
 # mail: xiangrao@qilin99.com
 # Created Time: 2016-05-19
 #########################################################################
-#!/bin/bash
 
 MY_HOME=${HOME}
 backgroud=${1}
@@ -44,4 +44,4 @@ dircolors_solarized_dest=$MY_HOME"/.dir_colors"
 ln -fs ${dircolors_solarized}"/dircolors.ansi-"${set_bg} ${dircolors_solarized_dest}
 
 #.z
-ln -fs ~/dotfiles/.z ~/.z
+ln -fs "${DOTFILES}/.z" "${MY_HOME}/.z"
