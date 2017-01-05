@@ -58,4 +58,3 @@ ln -fs ${oh_my_zsh} ${oh_my_zsh_dest}
 
 #ok
 echo "ok"
-sudo ln -fs  ${DOTFILES}"/stth.sh" "/usr/local/bin/stth"
